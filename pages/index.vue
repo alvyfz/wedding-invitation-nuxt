@@ -39,7 +39,7 @@
           <h2
             data-aos="zoom-in-up"
             data-aos-duration="2000"
-            class="text-4xl font-handwriting pt-6 text-gray-900"
+            class="text-4xl font-handwriting pt-6 text-gray-900 font-semibold"
           >
             Kedua Mempelai
           </h2>
@@ -116,15 +116,18 @@
             </p>
           </div>
         </section>
-        <section id="countdown" class="mt-20">
+        <section
+          id="countdown"
+          class="mt-20"
+          data-aos="zoom-in-up"
+          data-aos-duration="2000"
+        >
           <div class="flex justify-center">
-            <h2
-              data-aos="zoom-in-up"
-              data-aos-duration="2000"
-              class="font-handwriting text-5xl"
-            >
+            <h2 class="font-handwriting text-4xl font-semibold">
               Menghitung hari
             </h2>
+          </div>
+          <div class="flex justify-center mt-10">
             <TimeoutCard :expiry="countdown" />
           </div>
         </section>

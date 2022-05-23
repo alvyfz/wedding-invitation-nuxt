@@ -1,12 +1,48 @@
 <template>
-  <div class="">
-    <v-chip class="pa-3" small label color="#8950e6" outlined>
-      <b>{{ $moment(countDown).format("D") }}</b
-      >d:<b>{{ $moment(countDown).format("H") }}</b
-      >h:<b>{{ $moment(countDown).format("m") }}</b
-      >m:<b>{{ $moment(countDown).format("s") }}</b
-      >s
-    </v-chip>
+  <div class="grid grid-cols-2 md:grid-cols-4 w-full gap-4">
+    <div>
+      <div class="flex justify-center">
+        <div class="text-4xl font-bold">
+          {{ $moment(countDown).format("D") }}
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <div class="text-xl">Hari</div>
+      </div>
+    </div>
+
+    <div>
+      <div class="flex justify-center">
+        <div class="text-4xl font-bold">
+          {{ $moment(countDown).format("H") }}
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <div class="text-xl">Jam</div>
+      </div>
+    </div>
+
+    <div>
+      <div class="flex justify-center">
+        <div class="text-4xl font-bold">
+          {{ $moment(countDown).format("m") }}
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <div class="text-xl">Menit</div>
+      </div>
+    </div>
+
+    <div>
+      <div class="flex justify-center">
+        <div class="text-4xl font-bold">
+          {{ $moment(countDown).format("s") }}
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <div class="text-xl">Detik</div>
+      </div>
+    </div>
   </div>
 </template>
 
