@@ -131,6 +131,65 @@
             <TimeoutCard :expiry="countdown" />
           </div>
         </section>
+        <section id="location" class="my-20">
+          <div class="flex justify-center">
+            <h2 class="font-handwriting text-4xl font-semibold pb-10">
+              Lokasi
+            </h2>
+          </div>
+          <div
+            class="mx-6 md:-mx-10 lg:-mx-16 xl:mx-28 border rounded-md shadow-xl text-center p-6"
+          >
+            <p class="text-2xl">AKAD</p>
+            <div class="flex justify-center mt-4">
+              <img
+                class="w-100 h-100"
+                src="@/static/img/date.png"
+                alt=""
+              />
+            </div>
+            <p class="text-xl font-bold pt-4">
+              Minggu, 31 Desember 2022
+            </p>
+            <p class="text-lg">08:00 - selesai WIB</p>
+            <div class="flex justify-center mt-4">
+              <img
+                class="w-100 h-100"
+                src="@/static/img/location.png"
+                alt=""
+              />
+            </div>
+            <p class="text-xl font-bold pt-4">Mempelai Wanita</p>
+            <p>
+              Jl. Desa Panyingkiran No.52, Panyingkiran, Kabupaten
+              Majalengka, Jawa Barat 45459, Indonesia
+            </p>
+            <p class="text-2xl pt-10">UNDUH MANTU</p>
+            <div class="flex justify-center mt-4">
+              <img
+                class="w-100 h-100"
+                src="@/static/img/date.png"
+                alt=""
+              />
+            </div>
+            <p class="text-xl font-bold pt-4">
+              Senin, 01 Januari 2023
+            </p>
+            <p class="text-lg">08:00 - selesai WIB</p>
+            <div class="flex justify-center mt-4">
+              <img
+                class="w-100 h-100"
+                src="@/static/img/location.png"
+                alt=""
+              />
+            </div>
+            <p class="text-xl font-bold pt-4">Mempelai Pria</p>
+            <p>
+              Blok Minggu Rt 005 Rw 003 Desa Cikaracak Kecamatan
+              Argapura Kabupaten Majalengka
+            </p>
+          </div>
+        </section>
       </div>
     </div>
   </div>
@@ -155,7 +214,7 @@ export default {
   },
   created() {
     this.countdown = this.$moment(
-      "2022-06-29" + " " + "07:00",
+      new Date("2022/09/29 08:00:00"),
     ).format();
   },
 };
